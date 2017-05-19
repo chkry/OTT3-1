@@ -24,8 +24,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,18 +32,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final TextView firstpref = (TextView) findViewById(R.id.firstImportant);
         final TextView secondpref = (TextView) findViewById(R.id.secondImportant);
         final TextView thirdpref = (TextView) findViewById(R.id.thirdImportant);
-
         final TextView mostImp = (TextView) findViewById(R.id.mostImportant);
 
         firstpref.setOnClickListener(this);
         secondpref.setOnClickListener(this);
         thirdpref.setOnClickListener(this);
-        mostImp.setOnClickListener(this);
 
         readAllValues("1st Important Thing", "FIRSTPREFERENCE", firstpref);
         readAllValues("2nd Important Thing", "SECONDPREFERENCE", secondpref);
         readAllValues("3rd Important Thing", "THIRDPREFERENCE", thirdpref);
-        readAllValues("Most Important Thing", "MOSTIMP", mostImp);
+        readAllValues("Most Important Thing", "FIRSTPREFERENCE", mostImp);
 
 
     }//E.O.OnCreate
@@ -57,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.firstImportant:
                 TextView firstpref = (TextView) findViewById(R.id.firstImportant);
                 alertdialogupdater("First Important Thing", firstpref, "FIRSTPREFERENCE");
+
                 break;
             case R.id.secondImportant:
                 TextView secondpref = (TextView) findViewById(R.id.secondImportant);
@@ -66,13 +63,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 TextView thirdpref = (TextView) findViewById(R.id.thirdImportant);
                 alertdialogupdater("Third Important Thing", thirdpref, "THIRDPREFERENCE");
                 break;
-            case R.id.mostImportant:
-                TextView mostImp = (TextView) findViewById(R.id.mostImportant);
-                alertdialogupdater("Most Important Thing", mostImp, "MOSTIMP");
-                break;
         }
     }
-
 
     public void alertdialogupdater(final String titlename, final TextView txtview, final String preferencename) {
 
@@ -93,8 +85,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         SharedPreferences.Editor editor = sharedPref.edit();
                         editor.putString(preferencename, textinput);
                         editor.apply();
-                        String finalValue = sharedPref.getString(preferencename, titlename);
-                        txtview.setText(finalValue);
+
+                        if (preferencename.equals("FIRSTPREFERENCE")) {
+                            String finalValue = sharedPref.getString(preferencename, titlename);
+                            txtview.setText(finalValue);
+                            TextView mostImp = (TextView) findViewById(R.id.mostImportant);
+                            mostImp.setText(finalValue);
+                        } else {
+                            String finalValue = sharedPref.getString(preferencename, titlename);
+                            txtview.setText(finalValue);
+                        }
                     }
                 });
 
@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         dialog.cancel();
                     }
                 });
-
         alertDialog.show();
 
     }
