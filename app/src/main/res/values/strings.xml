@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">OTT 3/1</string>
+    <string name="first_important">First Important Thing</string>
+    <string name="second_important">Second Important Thing</string>
+    <string name="third_important">Third Important Thing</string>
+    <string name="most_important">Most Important Thing</string>
+    <string name="three_important_things">3 Important Things</string>
+    <string name="one_important_thing">1 Most Important Thing</string>
+
+
+    <string name="one_number">1.</string>
+    <string name="two_number">2.</string>
+    <string name="three_number">3.</string>
+    <string name="hash_value">#</string>
 </resources>

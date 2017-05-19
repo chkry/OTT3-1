@@ -3,85 +3,140 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/softbg5"
     android:orientation="vertical"
     tools:context="com.chakrireddy.ott31.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/headingBackground"
+        android:layout_height="50dp"
+        android:background="@color/softbg4"
         android:gravity="center_vertical"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3 Important Things"
+            android:text="@string/three_important_things"
             android:textAlignment="center"
             android:textColor="@color/headingBackground1"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="1st Important Thing"
-            android:textSize="18dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="2nd Important Thing"
-            android:textSize="18dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="3rd Important Thing"
-            android:textSize="18dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/headingBackground"
+        android:layout_height="80dp"
+        android:background="@color/softbg5"
         android:gravity="center_vertical"
-        android:orientation="vertical">
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/one_number"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/firstImportant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first_important"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/softbg5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/two_number"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/secondImportant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/second_important"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/three_number"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/thirdImportant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/third_important"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/softbg4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1 Most Important Thing"
+            android:text="@string/one_important_thing"
             android:textAlignment="center"
             android:textColor="@color/headingBackground1"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="80dp"
+        android:background="@color/softbg5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/hash_value"
+            android:textColor="@color/blackcolor"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/mostImportant"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Most Important Thing"
+            android:text="@string/most_important"
             android:textColor="@color/blackcolor"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
+
+
 </LinearLayout>

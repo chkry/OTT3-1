@@ -8,4 +8,12 @@
     <color name="headingBackground">#DD99BB</color>
     <color name="blackcolor">#000</color>
 
+
+    <color name="softbg1">#FFF5B2</color>
+    <color name="softbg5">#D5D3D3</color>
+    <color name="softbg3">#DBD8F0</color>
+    <color name="softbg4">#F6BB66</color>
+    <color name="softbg2">#EAE8E8</color>
+
+
 </resources>
