@@ -13,6 +13,7 @@ package com.chakrireddy.ott31;
 * */
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -33,10 +34,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final TextView secondpref = (TextView) findViewById(R.id.secondImportant);
         final TextView thirdpref = (TextView) findViewById(R.id.thirdImportant);
         final TextView mostImp = (TextView) findViewById(R.id.mostImportant);
+        final TextView instructions = (TextView) findViewById(R.id.instructions);
+        final TextView about = (TextView) findViewById(R.id.about);
+        final TextView contact = (TextView) findViewById(R.id.contact);
 
         firstpref.setOnClickListener(this);
         secondpref.setOnClickListener(this);
         thirdpref.setOnClickListener(this);
+        instructions.setOnClickListener(this);
+        about.setOnClickListener(this);
+        contact.setOnClickListener(this);
 
         readAllValues("1st Important Thing", "FIRSTPREFERENCE", firstpref);
         readAllValues("2nd Important Thing", "SECONDPREFERENCE", secondpref);
@@ -62,6 +69,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.thirdImportant:
                 TextView thirdpref = (TextView) findViewById(R.id.thirdImportant);
                 alertdialogupdater("Third Important Thing", thirdpref, "THIRDPREFERENCE");
+                break;
+            case R.id.instructions:
+                Intent instruction = new Intent(MainActivity.this, Instructions.class);
+                startActivity(instruction);
+                break;
+            case R.id.about:
+                Intent about = new Intent(MainActivity.this, About.class);
+                startActivity(about);
+                break;
+            case R.id.contact:
+                Intent contact = new Intent(MainActivity.this, Contact.class);
+                startActivity(contact);
                 break;
         }
     }

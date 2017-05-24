@@ -1,5 +1,26 @@
 <resources>
     <string name="app_name">OTT 3/1</string>
+
+
+    <!-- About STRINGS -->
+    <string name="version_info">Version: 1.0</string>
+    <string name="stability_info">Stability: Stable</string>
+    <string name="dev_info">Developed by : Chakri Reddy</string>
+    <string name="email_info">chkry@icloud.com</string>
+    <string name="instagram_info">www.instagram.com/chkry</string>
+    <string name="website_info">www.chakrireddy.com</string>
+    <string name="linkedin_info">www.linkedin.com/in/chkry</string>
+    <string name="about">About</string>
+    <string name="changelog">Changelog</string>
+    <string name="contact">Contact</string>
+    <string name="content_desc">Image View</string>
+    <string name="social_networks">Social Networks</string>
+
+    <!-- CHANGELOG STRINGS -->
+    <string name="changelog_1date">Date : 25/May/2017</string>
+    <string name="changelog_1"># Stable initial release with basic features</string>
+
+    <!-- MainActivity STRINGS -->
     <string name="first_important">First Important Thing</string>
     <string name="second_important">Second Important Thing</string>
     <string name="third_important">Third Important Thing</string>
@@ -7,9 +28,24 @@
     <string name="three_important_things">3 Important Things</string>
     <string name="one_important_thing">1 Most Important Thing</string>
 
-
     <string name="one_number">1.</string>
     <string name="two_number">2.</string>
     <string name="three_number">3.</string>
     <string name="hash_value">#</string>
+    <string name="title_activity_about">about</string>
+
+    <!-- Instructions STRINGS -->
+    <string name="what_message"># Organize Tomorrow Today : Think of 3 important thigs to do tomorrow</string>
+    <string name="what_message1"># Tap on 1st field and enter your most important task todo tomorrow</string>
+    <string name="what_message2"># Tap on 2nd &amp; 3rd Fields and enter your next important tasks todo tomorrow</string>
+    <string name="why_message">This application is based on the principles shared in the book Organize Tomorrow
+        Today: 8 Ways to Retrain Your Mind to Optimize Performance by Jason Selk and Tom Bartow</string>
+    <string name="whatisit_msg"># This application is for increasing your productivity and reminding you what tasks are your priority</string>
+    <string name="whatisit_msg1"># Completing many tasks in a day won\'t make you productive.</string>
+    <string name="what_application">1.What is this application?</string>
+    <string name="what_do">2.What should i do?</string>
+    <string name="how_it_works">3.How does this work for me?</string>
+    <string name="instructions">Instructions</string>
+
+
 </resources>
