@@ -11,6 +11,7 @@ package com.chakrireddy.ott31;
         String newValue = getResources().getString(R.string.chkry_name);
         String finalValue = sharedPref.getString(getString(R.string.chkry_name),newValue);
 * */
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -49,6 +50,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         readAllValues("2nd Important Thing", "SECONDPREFERENCE", secondpref);
         readAllValues("3rd Important Thing", "THIRDPREFERENCE", thirdpref);
         readAllValues("Most Important Thing", "FIRSTPREFERENCE", mostImp);
+
+
+//        ProgressDialog dialog = new ProgressDialog(this); // this = YourActivity
+//        dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+//        dialog.setMessage("Uploading, Please Wait...");
+//        dialog.setIndeterminate(true);
+//        dialog.setCanceledOnTouchOutside(false);
+//        dialog.show();
 
 
     }//E.O.OnCreate
